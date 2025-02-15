@@ -28,7 +28,7 @@ class Settings(BaseSettings):
     TOTAL_MESSAGES_SUMMARY_TRIGGER: int = 20
     TOTAL_MESSAGES_AFTER_SUMMARY: int = 5
 
-    SHORT_TERM_MEMORY_DB_PATH: str = "/app/data/memory.db"
+    SHORT_TERM_MEMORY_DB_PATH: str = "./data/memory.db"
 
 
 settings = Settings()
