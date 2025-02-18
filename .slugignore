@@ -1,0 +1,31 @@
+# Escludi la cartella dei file di controllo versione
+.git/
+
+# Escludi file e cartelle di sviluppo e editor
+.vscode/
+.pre-commit-config.yaml
+.chainlit/
+.venv/
+
+
+# Escludi notebook e documentazione (se non necessari in produzione)
+notebooks/
+docs/
+start.md
+
+# Escludi file relativi ai container o a build pipeline (se non usati in produzione)
+Dockerfile*
+docker-compose.yml
+cloudbuild.yaml
+
+# Escludi file Markdown (solitamente documentazione)
+*.md
+
+# Escludi cartelle di asset non necessari (ad esempio, se "img/video_thumbnails" non è usato nel runtime)
+img/video_thumbnails/
+
+# Se la cartella .chainlit non è necessaria per l'API (se usi Chainlit solo per interfacce di sviluppo)
+.chainlit/
+
+# Escludi file di lock specifici se non servono al runtime
+uv.lock
